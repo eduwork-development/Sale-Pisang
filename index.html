@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+    <div class="w-full z-[99]" id="navbar">
+      <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0" style="box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5)">
+        <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://flowbite.com/" class="flex items-center">
+            <img src="./images/logo.png" alt="" class="w-[120px]" />
+          </a>
+
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[450]">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 font-[450]">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-900 bg-[#fabd4b] font-[450] rounded-full text-sm px-4 py-2 text-center mr-3 md:mr-0">Hubungi Admin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- NavBar End -->
+
+    <div class="lg:flex absolute top-0 left-[200px] bg-yellow-300 w-[300px] h-[200px] -z-20" style="filter: blur(140px)"></div>
+    <div class="hidden lg:flex absolute top-[500px] right-0 bg-yellow-300 w-[200px] h-[100px] -z-20" style="filter: blur(100px)"></div>
+    <!-- Hero Section Start -->
+    <div class="container mx-auto lg:max-w-[1000px] flex flex-col lg:flex-row w-[95%] mt-[120px]">
+      <div class="container flex flex-col w-full mx-auto h-fit gap-3">
+        <div>
+          <p class="text-[60px] w-[95%] lg:text-[70px] font-bold lg:w-[200px] lg:leading-[85px] font-serif">RAJANYA SALE PISANG INDONESIA</p>
+        </div>
+        <div>
+          <p class="text-[26px] w-[95%] lg:w-[500px]">Dibuat dari pisang terbaik Indonesia untuk pengalaman modern bersama sehari-hari.</p>
+        </div>
+        <div>
+          <button class="relative md:ml-0 px-[26px] py-[11px] w-full md:w-fit font-[450] text-[30px] md:text-[20px] bg-[#fabd4b] text-gray-900 mr-[6px] rounded-full">Bergabung Jadi Reseller</button>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3 mt-[40px]">
+        <div class="flex flex-row gap-3">
+          <div
+            class="w-[230px] h-[200px] bg-cover bg-no-repeat rounded-[30px] drop-shadow-lg"
+            style="background-image: url('./images/sp1.jpg'); box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14)"
+          ></div>
+          <div
+            class="w-[230px] h-[200px] bg-cover bg-no-repeat rounded-[30px]"
+            style="background-image: url('./images/sp2.jpg'); box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14)"
+          ></div>
+        </div>
+        <div
+          class="w-full lg:w-[480px] h-[200px] bg-cover bg-no-repeat rounded-[30px]"
+          style="background-image: url('./images/sp3.jpg'); box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14)"
+        ></div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Section 2 Start -->
+    <div class="bg-[#ff4405] h-fit mt-[70px] py-[30px]">
+      <div class="container mx-auto text-white lg:max-w-[1000px] w-[95%] flex flex-col lg:flex-row justify-between items-center">
+        <div class="lg:mr-[80px]">
+          <p class="font-bold lg:text-[30px]">Our Salenda Pisang</p>
+        </div>
+        <div class="flex flex-row items-center gap-[20px]">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="30px" width="30px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  fill: #ffffff;
+                }
+              </style>
+              <g>
+                <path
+                  class="st0"
+                  d="M465.937,122.204V36.703l41.688-1.642V1.43H377.099v35.272h43.328c0,0,7.329,33.772,0,74.191   c-18.788,103.608-140.68,222.48-271.851,255.432c-69.594,17.482-122.228,13.417-122.228,13.417   c-10.107-2.694-20.635,2.49-24.662,12.13c-4.019,9.641-0.28,20.952,5.156,33.875c0,0,24.54,68.466,150.032,82.126   c165.296,17.985,299.318-54.062,345.389-213.809C530.702,195.463,490.161,122.204,465.937,122.204z M307.532,412.19   c-61.324,33.948-127.337,48.27-178.098,48.774l-0.186-19.105c47.384-0.392,110.89-14.107,169.025-46.377   c58.21-32.298,111.04-82.76,139.096-157.091l17.856,6.732C425.36,324.348,368.781,378.268,307.532,412.19z"
+                />
+              </g>
+            </svg>
+          </div>
+          <p class="lg:text-[26px] w-[140px] leading-[30px]">Pisang Asli Indonesia</p>
+        </div>
+        <div class="flex flex-row items-center gap-[20px]">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="40px" width="40px" version="1.1" id="Capa_1" viewBox="0 0 384 384" xml:space="preserve">
+              <g>
+                <g>
+                  <path
+                    d="M368,72H16C7.168,72,0,79.168,0,88v18.752c0,41.504,17.032,81.472,46.72,109.64c18.712,17.752,41.136,29.816,65.4,35.68    V296c0,8.832,7.168,16,16,16h128c8.832,0,16-7.168,16-16v-44.072c24.152-5.888,46.512-17.856,65.152-35.536    C366.968,188.224,384,148.264,384,106.752V88C384,79.168,376.832,72,368,72z M240.128,280h-96v-23.992    c3.168,0.04,6.336,0.16,9.536-0.008h76.68c2.496,0.128,4.968,0.184,7.448,0.184c0.784,0,1.552-0.096,2.336-0.112V280z     M352,106.752c0,7.184-0.752,14.272-2,21.248H160c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h179.44    c-6.08,12.336-14.152,23.656-24.192,33.176C295.496,211.912,270.472,222.6,243.704,224h-12.952h-77.504h-12.88    c-26.76-1.4-51.856-12.072-71.624-30.832c-10.04-9.52-18.104-20.84-24.184-33.168H96c8.832,0,16-7.168,16-16    c0-8.832-7.168-16-16-16H34.008C32.752,121.024,32,113.928,32,106.752V104h320V106.752z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <p class="lg:text-[26px] w-[140px] leading-[30px]">Memiliki 4 Varian Rasa</p>
+        </div>
+        <div class="flex flex-row items-center gap-[20px]">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 21V3.90002C5 3.90002 5.875 3 8.5 3C11.125 3 12.875 4.8 15.5 4.8C18.125 4.8 19 3.9 19 3.9V14.7C19 14.7 18.125 15.6 15.5 15.6C12.875 15.6 11.125 13.8 8.5 13.8C5.875 13.8 5 14.7 5 14.7"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p class="lg:text-[26px] w-[140px] leading-[30px]">Khas Indonesia</p>
+        </div>
+      </div>
+    </div>
+    <!-- Section 2 End -->
+
+    <!-- Section 3 Start -->
+    <div class="flex justify-center items-center my-11">
+      <h1 class="text-[#ff4405] text-[45px] font-bold">Bergabung Jadi Mitra</h1>
+    </div>
+    <div class="container mx-auto lg:max-w-[1000px] w-[95%]">
+      <div class="flex flex-col lg:flex-row gap-4">
+        <div class="flex flex-col w-[50%] gap-3">
+          <div class="w-[95%] lg:w-full h-[200px] bg-cover bg-no-repeat rounded-[16px] flex justify-center items-center content-center bg-reseller">
+            <p class="text-white text-[40px] font-bold">Reseller</p>
+          </div>
+          <div>
+            <p class="text-[20px] w-[95%] lg:w-full">Menjadi reseller Salenda salah satu peluang usaha yang cukup menjanjikan kedepannya . Dengan modal yang relatif kecil.</p>
+          </div>
+          <div class="w-full flex justify-center items-center">
+            <a href="" class="bg-[#fabd4b] text-gray-900 mr-[6px] rounded-full w-full flex justify-center items-center text-[18px] font-semibold py-[7px]">Baca Selengkapnya Disini!</a>
+          </div>
+        </div>
+        <div class="flex flex-col w-[50%] gap-3">
+          <div class="w-[95%] lg:w-full h-[200px] bg-cover bg-no-repeat rounded-[16px] flex justify-center items-center content-center bg-reseller">
+            <p class="text-white text-[40px] font-bold">Reseller</p>
+          </div>
+          <div>
+            <p class="text-[20px] w-[95%] lg:w-full">Menjadi reseller Salenda salah satu peluang usaha yang cukup menjanjikan kedepannya . Dengan modal yang relatif kecil.</p>
+          </div>
+          <div class="w-full flex justify-center items-center">
+            <a href="" class="bg-[#fabd4b] text-gray-900 mr-[6px] rounded-full w-full flex justify-center items-center text-[18px] font-semibold py-[7px]">Baca Selengkapnya Disini!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 3 End -->
+
+    <!-- Section 4 Start -->
+    <div class="flex justify-center items-center my-11">
+      <h1 class="text-[#ff4405] text-[45px] font-bold">Produk Favorit</h1>
+    </div>
+    <div class="container mx-auto lg:max-w-[1000px] w-[95%]">
+      <div class="flex flex-col lg:flex-row gap-4">
+        <div class="flex flex-col gap-[9px]">
+          <div class="w-[240px] h-[290px] bg-cover bg-no-repeat rounded-[16px]" style="background-image: url('images/p1.jpg')"></div>
+          <p class="flex justify-center items-center text-[16px]">Sale Pisang Rasa Coklat</p>
+        </div>
+        <div class="flex flex-col gap-[9px]">
+          <div class="w-[240px] h-[290px] bg-cover bg-no-repeat rounded-[16px]" style="background-image: url('images/p2.jpg')"></div>
+          <p class="flex justify-center items-center text-[16px]">Sale Pisang Rasa Madu</p>
+        </div>
+
+        <div class="flex flex-col gap-[9px]">
+          <div class="w-[240px] h-[290px] bg-cover bg-no-repeat rounded-[16px]" style="background-image: url('images/p3.jpg')"></div>
+          <p class="flex justify-center items-center text-[16px]">Sale Pisang Rasa Original</p>
+        </div>
+
+        <div class="flex flex-col gap-[9px]">
+          <div class="w-[240px] h-[290px] bg-cover bg-no-repeat rounded-[16px]" style="background-image: url('images/p4.jpg')"></div>
+          <p class="flex justify-center items-center text-[16px]">Sale Pisang Stik Origtinal</p>
+        </div>
+      </div>
+    </div>
+    <!-- Section 4 End -->
+
+    <!-- Section 5 Start -->
+    <div class="bg-[#484848] h-fit mt-[70px] py-[50px]">
+      <div class="container mx-auto text-white lg:max-w-[1000px] w-[95%] flex flex-col lg:flex-row justify-between items-center">
+        <div>
+          <p class="font-bold lg:text-[50px] w-[500px]">Kami Sudah Tersedia Juga Di Toko Online</p>
+        </div>
+        <div class="flex flex-row gap-[18px]">
+          <div class="flex justify-center items-center content-center bg-white p-4 rounded-[16px]">
+            <img src="images/shoppe.png" alt="" class="w-[80px]" />
+          </div>
+          <div class="flex justify-center items-center content-center bg-white p-4 rounded-[16px]">
+            <img src="images/tokped.png" alt="" class="w-[80px]" />
+          </div>
+          <div class="flex justify-center items-center content-center bg-white p-4 rounded-[16px]">
+            <img src="images/blibli.png" alt="" class="w-[80px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5 End -->
+
+    <!-- Section 6 Start -->
+    <div class="flex justify-center items-center my-11">
+      <h1 class="text-[#ff4405] text-[45px] font-bold">Testimoni</h1>
+    </div>
+    <div class="container mx-auto lg:max-w-[1000px] w-[95%]">
+      <div class="flex flex-col gap-[50px]">
+        <div class="flex flex-row gap-[50px] mr-[50px]">
+          <div class="bg-white rounded-[16px] drop-shadow-lg p-[25px]" style="box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05); -webkit-box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05); -moz-box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05)">
+            <div class="flex flex-row items-center gap-4 mb-[23px]">
+              <div class="bg-[#fc9a19] rounded-full w-[60px] h-[60px] flex justify-center items-center content-center"><p class="text-[40px]">I</p></div>
+              <p class="text-[28px]">lksbdp22. ee01</p>
+            </div>
+            <div>
+              <p class="text-[18px]">Cocok sm selera sy.. manisnya pas.. murah.. Sy bwa utk kluarga mreka bilang sale terenak 👍👍👍 klw ke magelang sy pasti mampir..😁👆👆 …</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-[16px] drop-shadow-lg p-[25px]" style="box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05); -webkit-box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05); -moz-box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05)">
+            <div class="flex flex-row items-center gap-4 mb-[23px]">
+              <div class="bg-[#fc9a19] rounded-full w-[60px] h-[60px] flex justify-center items-center content-center"><p class="text-[40px]">E</p></div>
+              <p class="text-[28px]">Eka Putri Lestari</p>
+            </div>
+            <div>
+              <p class="text-[18px]">The besttt bangett si sale pisang salenda ini , rasanya pas manis alami dijamin cocok banget buat oleh2 dari magelang dan harganya terjangkau.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row gap-[50px] ml-[50px]">
+          <div class="bg-white rounded-[16px] drop-shadow-lg p-[25px]" style="box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05); -webkit-box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05); -moz-box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05)">
+            <div class="flex flex-row items-center gap-4 mb-[23px]">
+              <div class="bg-[#fc9a19] rounded-full w-[60px] h-[60px] flex justify-center items-center content-center"><p class="text-[40px]">F</p></div>
+              <p class="text-[28px]">Fajru Rizqi Mubarok</p>
+            </div>
+            <div>
+              <p class="text-[18px]">sale pisangnya enak, renyah juga jadi pas untuk cemilan saat bersantai🤩.. pokoknya harus banget nyobain👍👍</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-[16px] drop-shadow-lg p-[25px]" style="box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05); -webkit-box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05); -moz-box-shadow: 3px 6px 5px 4px rgba(0, 0, 0, 0.05)">
+            <div class="flex flex-row items-center gap-4 mb-[23px]">
+              <div class="bg-[#fc9a19] rounded-full w-[60px] h-[60px] flex justify-center items-center content-center"><p class="text-[40px]">D</p></div>
+              <p class="text-[28px]">Devia</p>
+            </div>
+            <div>
+              <p class="text-[18px]">Enak , renyah , mantul bangettttt . Next beli lagii dehh buat oleh oleh pulang ke Bali 🤗 …</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 6 End -->
+
+    <!-- Footer Start -->
+
+    <footer class="bg-white dark:bg-gray-900 mt-[150px] h-[300px]">
+      <div class="container mx-auto lg:max-w-[1000px] w-[95%]">
+        <div class="md:flex md:justify-between md:gap-[20px]">
+          <div class="mb-6 md:mb-0">
+            <a href="https://flowbite.com/" class="flex items-center">
+              <img src="./images/logo.png" class="w-[150px]" alt="FlowBite Logo" />
+            </a>
+          </div>
+          <div class="flex flex-col w-[400px]">
+            <p class="text-[17px]">Salenda memberikan Anda kemudahan dalam belajar dan meningkatkan kemampuan Anda untuk menjadi reseller dan mitra.</p>
+            <div class="flex flex-row mt-[13px]">
+              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>WhatsApp</title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" class="fill-current" viewBox="0 0 24 24" viewBox="0 0 24 24">
+                  <path
+                    d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <ul class="flex flex-col gap-[14px]">
+              <li><a href="" class="text-amber-400 font-semibold text-[20px]">Our Salenda</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Mitra</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col">
+            <ul class="flex flex-col gap-[14px]">
+              <li><a href="" class="text-amber-400 font-semibold text-[20px]">Our Produk</a></li>
+              <li><a href="">Sale Pisang</a></li>
+              <li><a href="">Pisang Stik</a></li>
+              <li><a href="">Keripik Pisang</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
