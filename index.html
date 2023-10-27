@@ -72,11 +72,11 @@
       <div class="flex flex-col gap-3 mt-[30px] md:mt-[20px] lg:mt-[0px]">
         <div class="flex flex-row gap-3 md:justify-center">
           <div
-            class="w-[230px] h-[200px] bg-cover bg-no-repeat rounded-[30px] drop-shadow-lg"
+            class="w-[230px] h-[200px] md:w-full lg:w-[230px] bg-cover bg-no-repeat rounded-[30px] drop-shadow-lg"
             style="background-image: url('./images/sp1.jpg'); box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14)"
           ></div>
           <div
-            class="w-[230px] h-[200px] bg-cover bg-no-repeat rounded-[30px]"
+            class="w-[230px] h-[200px] md:w-full lg:w-[230px] bg-cover bg-no-repeat rounded-[30px]"
             style="background-image: url('./images/sp2.jpg'); box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14); -moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.14)"
           ></div>
         </div>
@@ -283,20 +283,54 @@
     </div>
     <!-- Section 6 End -->
 
+    <!-- Section 7 Start -->
+    <div class="container mx-auto lg:max-w-[1000px] w-[95%] flex flex-col justify-center items-center mt-[40px] md:mt-[90px] md:flex-row md:justify-between md:items-center">
+      <div class="flex text-black font-bold text-[26px] md:text-start text-center mb-[20px] md:mb-0">
+        <p>
+          Bergabung bersama <br />
+          kami sebagai
+          <span class="text-[#fabd4b]">Reseller</span>
+        </p>
+      </div>
+      <div class="flex"><a href="https://api.whatsapp.com/send?phone=6285201293777" class="text-black bg-[#fabd4b] px-[22px] py-[12px] rounded-[30px]">Hubungi Admin</a></div>
+    </div>
+    <!-- Section 7 End -->
+
+    <!-- Section 8 Start -->
+    <div class="container mx-auto lg:max-w-[1000px] rounded-[30px] p-[50px] w-[95%] mt-[60px] bg-cover bg-no-repeat" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('images/sp3.jpg')">
+      <h1 class="text-white text-[25px] text-center font-bold">Kontak Kami</h1>
+      <form>
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+          <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="...@yourmail.com" required />
+        </div>
+        <div class="mb-6">
+          <label for="name" class="block mb-2 text-sm font-medium text-white">Nama</label>
+          <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nama" required />
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block mb-2 text-sm font-medium text-white">Pesan</label>
+          <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a message..."></textarea>
+        </div>
+        <button type="submit" class="text-white bg-[#fabd4b] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+      </form>
+    </div>
+    <!-- Section 8 End -->
+
     <!-- Footer Start -->
 
-    <footer class="bg-white dark:bg-gray-900 mt-[150px] h-[700px] lg:h-[300px]">
+    <footer class="bg-white dark:bg-gray-900 mt-[30px] h-[700px] lg:h-[300px] border-t pt-[20px] md:pt-[30px] lg:pt-[40px]">
       <div class="container mx-auto lg:max-w-[1000px] w-[95%]">
-        <div class="md:flex lg:justify-between lg:gap-[20px] lg:flex-row flex flex-col justify-center items-center gap-[30px]">
+        <div class="md:flex lg:justify-between lg:gap-[20px] lg:flex-row flex flex-col md:flex-row justify-center items-center gap-[30px]">
           <div class="md:flex md:flex-row md:gap-[22px] lg:flex lg:gap-[20px]">
-            <div class="mb-6 md:mb-0">
+            <div class="mb-6 md:mb-0 flex justify-center">
               <a href="/index.html" class="flex items-center">
                 <img src="./images/logo.png" class="w-[150px]" alt="FlowBite Logo" />
               </a>
             </div>
-            <div class="flex flex-col lg:w-[400px] lg:relative lg:right-[-20px]">
-              <p class="text-[17px] lg:text-start text-center">Salenda memberikan Anda kemudahan dalam belajar dan meningkatkan kemampuan Anda untuk menjadi reseller dan mitra.</p>
-              <div class="flex flex-row mt-[13px] lg:justify-start lg:items-start justify-center items-center">
+            <div class="flex flex-col lg:w-[400px] lg:relative lg:right-[-20px] md:w-[250px]">
+              <p class="text-[17px] lg:text-start text-center md:text-start">Salenda memberikan Anda kemudahan dalam belajar dan meningkatkan kemampuan Anda untuk menjadi reseller dan mitra.</p>
+              <div class="flex flex-row mt-[13px] lg:justify-start lg:items-star md:justify-start justify-center items-center">
                 <a href="https://api.whatsapp.com/send?phone=6285201293777" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300">
                   <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>WhatsApp</title>
@@ -317,7 +351,7 @@
           </div>
           <div class="md:flex md:flex-row md:gap-[22px] lg:flex lg:gap-[20px]">
             <div class="flex flex-col lg:relative lg:right-[70px]">
-              <ul class="flex flex-col gap-[14px] justify-center items-center lg:justify-start lg:items-start">
+              <ul class="flex flex-col gap-[14px] justify-center items-center lg:justify-start lg:items-start md:justify-start md:items-start">
                 <li><a href="" class="text-amber-400 font-semibold text-[20px]">Our Salenda</a></li>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About Us</a></li>
@@ -325,7 +359,7 @@
               </ul>
             </div>
             <div class="flex flex-col">
-              <ul class="flex flex-col gap-[14px] justify-center items-center lg:justify-start lg:items-start">
+              <ul class="flex flex-col gap-[14px] justify-center items-center lg:justify-start lg:items-start md:justify-start md:items-start">
                 <li><a href="" class="text-amber-400 font-semibold text-[20px]">Our Produk</a></li>
                 <li><a href="">Sale Pisang</a></li>
                 <li><a href="">Pisang Stik</a></li>
