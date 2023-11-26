@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 900px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+      }
+    </style> -->
   </head>
   <body>
     <!-- NavBar Start -->
@@ -51,171 +76,138 @@
     <div class="hidden lg:flex absolute top-0 left-[200px] bg-yellow-300 w-[300px] h-[200px] -z-20" style="filter: blur(140px)"></div>
     <div class="hidden lg:flex absolute top-[500px] right-0 bg-yellow-300 w-[200px] h-[100px] -z-20" style="filter: blur(100px)"></div>
     <!-- Hero Section Start -->
-    <div class="bg-[url('./images/abouttt.jpg')] bg-cover bg-no-repeat h-[900px] bg-center"></div>
+    <div class="bg-[url('./images/resellerbg.png')] bg-cover bg-no-repeat h-[900px] bg-center"></div>
     <!-- Hero Section End -->
 
     <!-- Section 2 Start -->
-    <div class="bg-white h-fit lg:mt-[-250px] mt-[-600px] py-[30px] rounded-t-[50px]">
+    <div
+      class="h-fit lg:mt-[-250px] mt-[-600px] py-[30px] rounded-t-[50px] bg-cover bg-no-repeat"
+      style="background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 52%, #e5e9eb 100%), url('images/anotherbgg.jpg')"
+    >
       <div class="flex justify-center items-center my-11">
-        <h1 class="text-black text-[36px] lg:text-[55px] font-semibold text-center">Produsen <span class="text-[#FFB100]">Sale Pisang</span> Premium</h1>
+        <h1 class="text-black text-[36px] lg:text-[60px] font-semibold md:font-bold text-center">Produk Terjangkau & Mudah Dijual</h1>
       </div>
 
-      <div class="container mx-auto lg:max-w-[1000px] flex flex-col gap-8">
-        <div class="flex flex-col md:flex-row gap-8 justify-center items-center w-full">
-          <div class="flex flex-row items-center">
-            <img src="images/01.png" class="md:w-[400px] w-[50%] md:h-auto h-full" alt="" />
-            <img src="images/about1mbl.png" class="flex md:hidden md:w-[300px] w-[50%] md:h-auto h-full" alt="" />
+      <div class="container mx-auto lg:max-w-[1000px] flex flex-col gap-8 items-center justify-center">
+        <div class="flex flex-col md:w-full w-[95%] md:gap-[45px]">
+          <div class="flex flex-col gap-[14px]">
+            <div class="flex flex-row items-center md:gap-[25px] gap-[10px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                <path d="M24.375 46.5C36.9956 46.5 47.2266 36.4264 47.2266 24C47.2266 11.5736 36.9956 1.5 24.375 1.5C11.7544 1.5 1.52344 11.5736 1.52344 24C1.52344 36.4264 11.7544 46.5 24.375 46.5Z" fill="#4BD37B" />
+                <path d="M35.0391 10.5L19.043 26.7L13.7109 21.3L8.37891 26.7L19.043 37.5L40.3711 15.9L35.0391 10.5Z" fill="white" />
+              </svg>
+              <p class="md:text-[35px] text-[25px] font-semibold">Kualitas Terbaik</p>
+            </div>
+            <div class="md:text-[30px] text-[20px] font-light text-justify">
+              <p>Dibuat dari pisang terbaik Indonesia untuk pengalaman modern bersama sehari-hari. Semua produk kami disiapkan dengan teliti untuk memberikan pengalaman rasa yang luar biasa</p>
+            </div>
           </div>
-          <div class="text-[24px] text-justify md:leading-[45px] w-[95%]">
-            Salenda adalah sebuah usaha yang bergerak dibidang pengolahan makanan berbahan baku pisang. Diawali dengan produk pertamanya yaitu Sale Pisang Premium, Banana Stik dan kemudian diikuti dengan Keripik Pisang dengan aneka varian
-            rasa.
+          <div class="flex flex-col gap-[14px]">
+            <div class="flex flex-row items-center md:gap-[25px] gap-[10px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                <path d="M24.375 46.5C36.9956 46.5 47.2266 36.4264 47.2266 24C47.2266 11.5736 36.9956 1.5 24.375 1.5C11.7544 1.5 1.52344 11.5736 1.52344 24C1.52344 36.4264 11.7544 46.5 24.375 46.5Z" fill="#4BD37B" />
+                <path d="M35.0391 10.5L19.043 26.7L13.7109 21.3L8.37891 26.7L19.043 37.5L40.3711 15.9L35.0391 10.5Z" fill="white" />
+              </svg>
+              <p class="md:text-[35px] text-[25px] font-semibold">Harga Kompetitif</p>
+            </div>
+            <div class="md:text-[30px] text-[20px] font-light text-justify">
+              <p>Dapatkan keuntungan lebih dengan harga kompetitif dari kami. Sebagai reseller, Anda bisa menikmati keuntungan yang sepadan untuk produk makanan berkualitas tinggi ini.</p>
+            </div>
           </div>
-          <div class="hidden md:flex">
-            <img src="images/about1.png" class="md:w-[600px] w-[95%] md:h-auto h-full" alt="" />
-          </div>
-        </div>
-        <div class="flex flex-col md:flex-row-reverse gap-8 justify-center items-center w-full">
-          <div class="flex flex-row items-center">
-            <img src="images/02.png" class="md:w-[400px] w-[50%] md:h-auto h-full" alt="" />
-            <img src="images/about2mbl.png" class="flex md:hidden md:w-[300px] w-[50%] md:h-auto h-full" alt="" />
-          </div>
-          <div class="text-[24px] text-justify md:leading-[45px] w-[95%]">Dalam proses produksi Salenda dibantu tim yang mayoritas diisi oleh perempuan dengan semangat pemberdayaan para ibu-ibu dan lingkungannya.</div>
-          <div class="hidden md:flex">
-            <img src="images/about2.png" class="md:w-[600px] w-[95%] md:h-auto h-full" alt="" />
-          </div>
-        </div>
-        <div class="flex flex-col md:flex-row gap-8 justify-center items-center w-full">
-          <div class="flex flex-row items-center">
-            <img src="images/03.png" class="md:w-[400px] w-[50%] md:h-auto h-full" alt="" />
-            <img src="images/about3.png" class="flex md:hidden md:w-[300px] w-[50%] md:h-auto h-full" alt="" />
-          </div>
-          <div class="text-[24px] text-justify md:leading-[45px] w-[95%]">
-            Salenda diolah sedemikian rupa sehingga menghasilkan produk-produk dengan kualitas premium. Sangat renyah dengan aneka variasi rasa membuat produk Salenda sangat digemari oleh kaum milenial maupun orang tua
-          </div>
-          <div class="hidden md:flex">
-            <img src="images/about3.png" class="md:w-[600px] w-[95%] md:h-auto h-full" alt="" />
-          </div>
-        </div>
-        <div class="flex flex-col md:flex-row-reverse gap-8 justify-center items-center w-full">
-          <div class="flex flex-row items-center">
-            <img src="images/04.png" class="md:w-[400px] w-[50%] md:h-auto h-full" alt="" />
-            <img src="images/about4mbl.png" class="flex md:hidden md:w-[300px] w-[50%] md:h-auto h-full" alt="" />
-          </div>
-          <div class="text-[24px] text-justify md:leading-[45px] w-[95%]">
-            Diproduksi langsung dari kota Magelang dan diolah secara higenis, sehingga tidak perlu khawatir soal kesehatannya, karena produk Salenda telah lulus uji dari Dinas Kesehatan dan bersertifikat halal.
-          </div>
-          <div class="hidden md:flex">
-            <img src="images/about4.png" class="md:w-[600px] w-[95%] md:h-auto h-full" alt="" />
+          <div class="flex flex-col gap-[14px]">
+            <div class="flex flex-row items-center md:gap-[25px] gap-[10px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                <path d="M24.375 46.5C36.9956 46.5 47.2266 36.4264 47.2266 24C47.2266 11.5736 36.9956 1.5 24.375 1.5C11.7544 1.5 1.52344 11.5736 1.52344 24C1.52344 36.4264 11.7544 46.5 24.375 46.5Z" fill="#4BD37B" />
+                <path d="M35.0391 10.5L19.043 26.7L13.7109 21.3L8.37891 26.7L19.043 37.5L40.3711 15.9L35.0391 10.5Z" fill="white" />
+              </svg>
+              <p class="md:text-[35px] text-[25px] font-semibold">Produk yang Terjamin</p>
+            </div>
+            <div class="md:text-[30px] text-[20px] font-light text-justify">
+              <p>Temukan berbagai produk makanan lezat yang terbuat dari pisang di sini. Dari camilan pisang kering hingga olahan makanan pisang terbaru, kami memiliki pilihan yang akan memikat pelanggan Anda.</p>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row gap-8 justify-center items-center w-full">
-          <div class="flex flex-row items-center">
-            <img src="images/05.png" class="md:w-[400px] w-[50%] md:h-auto h-full" alt="" />
-            <img src="images/about5.png" class="flex md:hidden md:w-[300px] w-[50%] md:h-auto h-full" alt="" />
+      </div>
+      <div class="flex justify-center items-center my-11 flex-col md:mt-[150px]">
+        <h1 class="text-black text-[30px] lg:text-[50px] font-semibold md:font-bold text-center">Sukses Bersama Produk Terbaik</h1>
+        <p class="text-black text-[26px] lg:text-[30px] font-semibold md:font-bold text-center">Apa yang pelanggan katakan</p>
+
+        <div class="container mx-auto lg:max-w-[90%] flex flex-col gap-8 items-center justify-center swiper mySwiper mt-[30px]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi1.jpeg" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi5.jpeg" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi3.jpeg" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi4.jpeg" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi5.jpeg" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi1.jpeg" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi2.png" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi3.jpeg" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
+            <div class="swiper-slide text-center bg-transparent flex justify-center items-center"><img src="images/testi4.jpeg" alt="" class="block w-[500px] h-[700px] bg-cover bg-no-repeat" /></div>
           </div>
-          <div class="text-[24px] text-justify md:leading-[45px] w-[95%]">
-            Salenda membuka program kemitraan bagi Anda yang ingin menjadi reseller untuk dijual kembali di daerah Anda masing-masing atau dijual secara online, produknya sangat laris di pasaran dan selalu menjadi produk terlaris di toko
-            oleh-oleh maupun minimarket.
-          </div>
-          <div class="hidden md:flex">
-            <img src="images/about5.png" class="md:w-[600px] w-[95%] md:h-auto h-full" alt="" />
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
     <!-- Section 2 End -->
 
-    <div class="bg-[url('./images/bg-abouttt.png')] bg-cover bg-no-repeat h-fit bg-center md:p-[60px] p-[30px] lg:mt-[130px]">
+    <div class="bg-white bg-cover bg-no-repeat h-fit bg-center md:p-[60px] p-[30px] lg:mt-[30px]">
       <div class="flex justify-center items-center mb-11">
-        <h1 class="text-white text-[36px] lg:text-[60px] font-[400] text-center">Mengapa Pilih Salenda</h1>
+        <h1 class="md:font-bold text-[36px] lg:text-[60px] font-bold text-center">Bergabunglah Dengan Kami!</h1>
       </div>
 
       <div class="container mx-auto lg:max-w-[1000px] flex flex-col gap-6 md:gap-0 justify-center items-center md:justify-normal md:items-stretch">
-        <div class="flex flex-col md:flex-row md:justify-between justify-center gap-6">
-          <div class="rounded-[20px] border-2 border-white flex flex-row w-[290px] px-[10px] py-[24px] justify-center items-center gap-5">
-            <div class="ml-[13px]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-                <mask id="mask0_848_457" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="66" height="66">
-                  <path
-                    d="M31.1647 52.4987C33.2793 44.8424 40.673 39.3737 49.1897 40.2779C57.298 41.1383 63.7439 47.9779 64.1522 56.1154C64.2543 58.2591 63.9626 60.3154 63.3356 62.2258C62.9564 63.3924 61.8189 64.1654 60.5793 64.1654H17.1472C9.78555 64.1654 4.2643 57.4293 5.70805 50.2106L14.5835 5.83203H32.0835L37.9168 16.0404L25.4189 24.9799L21.8751 20.4154"
-                    fill="#555555"
-                  />
-                  <path
-                    d="M31.1647 52.4987C33.2793 44.8424 40.673 39.3737 49.1897 40.2779C57.2981 41.1383 63.7439 47.9779 64.1522 56.1154C64.2543 58.2591 63.9626 60.3154 63.3356 62.2258C62.9564 63.3924 61.8189 64.1654 60.5793 64.1654H17.1472C9.78555 64.1654 4.2643 57.4293 5.70805 50.2106L14.5835 5.83203H32.0835L37.9168 16.0404L25.4189 24.9799L21.8751 20.4154M25.4335 24.9799L32.0835 49.582"
-                    stroke="white"
-                    stroke-width="6.41667"
-                    stroke-miterlimit="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </mask>
-                <g mask="url(#mask0_848_457)">
-                  <path d="M0 -0.000976562H70V69.999H0V-0.000976562Z" fill="#FFD233" />
-                </g>
-              </svg>
-            </div>
-            <div class="text-white text-[18px]"><p>Aman dan sehat dikonsumsi</p></div>
-          </div>
-          <div class="rounded-[20px] border-2 border-white flex flex-row w-[290px] px-[10px] py-[24px] justify-center items-center gap-5">
-            <div class="ml-[13px]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-                <path
-                  d="M23.3337 46.667C19.2503 45.3064 14.5326 42.0397 12.4312 38.7555C12.1528 38.2996 12.0276 37.7666 12.0739 37.2345L12.4312 31.7657C12.5085 30.5845 13.9041 29.9574 14.868 30.6428C17.9816 32.8551 23.6662 36.4587 27.7087 36.4587C37.917 36.4587 46.667 32.8128 51.042 24.792"
-                  stroke="#FFD233"
-                  stroke-width="7.83333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M37.917 62.709C52.5003 59.7923 65.9782 44.5017 62.5147 29.0813L61.2488 23.334V11.6673L52.4988 10.209C52.4988 29.0813 48.1238 43.7507 29.1655 46.6673C20.4505 48.009 12.0957 46.1044 5.64404 42.4061L7.29196 52.5007C10.2086 59.7923 23.3336 65.6257 37.917 62.709Z"
-                  stroke="#FFD233"
-                  stroke-width="7.83333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <div class="text-white text-[18px]"><p>Pisang matang alami</p></div>
-          </div>
-          <div class="rounded-[20px] border-2 border-white flex flex-row w-[290px] px-[10px] py-[34px] justify-center items-center gap-5">
-            <div class="ml-[13px]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-                <path d="M11.6665 52.5V61.25H58.3332V20.4167L34.9998 8.75L11.6665 20.4167V29.1667M11.6665 40.8333H37.9165" stroke="#FFD233" stroke-width="6.41667" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M29.1665 32.083L37.9165 40.833L29.1665 49.583" stroke="#FFD233" stroke-width="6.41667" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div class="text-white text-[18px]"><p>Sudah tersebar dimana - mana</p></div>
-          </div>
-        </div>
+        <div class="hidden lg:flex absolute mt-[320px] ml-[-300px] bg-yellow-300 w-[300px] h-[200px] z-[1]" style="filter: blur(160px)"></div>
+        <div class="hidden lg:flex absolute ml-[1000px] bg-yellow-300 w-[200px] h-[200px] z-[1]" style="filter: blur(160px)"></div>
+        <div class="md:hidden flex absolute mt-[-420px] ml-[-490px] bg-yellow-200 w-[300px] h-[200px] z-[1] overflow-hidden" style="filter: blur(160px)"></div>
+        <div class="md:hidden flex absolute mt-[600px] ml-[170px] bg-yellow-200 w-[200px] h-[200px] z-[1]" style="filter: blur(100px)"></div>
+        <ol class="hidden list-decimal md:flex flex-col gap-[30px] ml-[30px] text-[30px] text-justify z-[2]">
+          <li><span class="font-bold">Daftar Sebagai Reseller</span> Daftarkan diri Anda sebagai reseller kami untuk mendapatkan akses eksklusif ke harga grosir dan penawaran khusus untuk produk-produk kami</li>
+          <li><span class="font-bold">Jelajahi Katalog Produk Kami</span> Telusuri katalog produk salenda dan temukan berbagai pilihan yang dapat Anda tawarkan kepada pelanggan Anda.</li>
+          <li><span class="font-bold">Pesan dengan Mudah </span>Pesan produk dengan mudah melalui platform online kami. Prosesnya cepat, aman, dan efisien.</li>
+          <li><span class="font-bold">Dapatkan Keuntungan</span> Nikmati keuntungan yang menggiurkan dengan menjual produk makanan berbahan dasar pisang berkualitas tinggi dari Salenda.</li>
 
-        <div class="flex flex-col md:flex-row justify-between md:mt-[50px] gap-6 md:gap-0">
-          <div class="rounded-[20px] border-2 border-white flex flex-row w-[290px] px-[10px] py-[34px] justify-center items-center gap-5">
-            <div class="ml-[13px]">
-              <img src="images/sss.png" alt="" />
-            </div>
-            <div class="text-white text-[18px]"><p>Kripik chrunchy & premium</p></div>
+          <!-- ... -->
+        </ol>
+        <div class="md:hidden flex flex-col gap-[30px] text-[30px] text-justify z-[2]">
+          <div class="flex flex-col">
+            <span class="font-bold text-[26px]">Daftar Sebagai Reseller</span>
+            <p class="text-justify text-[23px]">Daftarkan diri Anda sebagai reseller kami untuk mendapatkan akses eksklusif ke harga grosir dan penawaran khusus untuk produk-produk kami</p>
           </div>
-          <div class="rounded-[20px] border-2 border-white flex flex-row w-[290px] px-[10px] py-[34px] justify-center items-center gap-5">
-            <div class="ml-[13px]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-                <path
-                  d="M15.7015 25.4999L25.8628 3C27.884 3 29.8224 3.79017 31.2516 5.19669C32.6808 6.6032 33.4837 8.51084 33.4837 10.5V20.4999H47.8619C48.5983 20.4917 49.3278 20.6411 49.9997 20.9379C50.6716 21.2347 51.27 21.6717 51.7532 22.2187C52.2365 22.7656 52.5932 23.4094 52.7985 24.1055C53.0039 24.8016 53.053 25.5332 52.9425 26.2499L49.4368 48.7497C49.2531 49.942 48.6377 51.0287 47.7041 51.8097C46.7705 52.5907 45.5815 53.0133 44.3562 52.9997H15.7015M15.7015 25.4999V52.9997M15.7015 25.4999H8.08062C6.73315 25.4999 5.44088 26.0266 4.48808 26.9643C3.53528 27.902 3 29.1738 3 30.4998V47.9997C3 49.3258 3.53528 50.5975 4.48808 51.5352C5.44088 52.4729 6.73315 52.9997 8.08062 52.9997H15.7015"
-                  stroke="#FFD233"
-                  stroke-width="6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <div class="text-white text-[18px]"><p>Produk unggulan kota Magelang</p></div>
+
+          <div class="flex flex-col">
+            <span class="font-bold text-[26px]">Jelajahi Katalog Produk Kami</span>
+            <p class="text-justify text-[23px]">Telusuri katalog produk salenda dan temukan berbagai pilihan yang dapat Anda tawarkan kepada pelanggan Anda.</p>
           </div>
-          <div class="rounded-[20px] border-2 border-white flex flex-row w-[290px] px-[10px] py-[34px] justify-center items-center gap-5">
-            <div class="ml-[13px]">
-              <img src="images/halal.png" alt="" />
-            </div>
-            <div class="text-white text-[18px]"><p>Bersertifikasi Halal</p></div>
+
+          <div class="flex flex-col">
+            <span class="font-bold text-[26px]">Pesan dengan Mudah</span>
+            <p class="text-justify text-[23px]">Pesan produk dengan mudah melalui platform online kami. Prosesnya cepat, aman, dan efisien.</p>
           </div>
+
+          <div class="flex flex-col">
+            <span class="font-bold text-[26px]">Dapatkan Keuntungan</span>
+            <p class="text-justify text-[23px]">Nikmati keuntungan yang menggiurkan dengan menjual produk makanan berbahan dasar pisang berkualitas tinggi dari Salenda.</p>
+          </div>
+
+          <!-- ... -->
         </div>
+        <div class="flex justify-center items-center mt-[20px]">
+          <a href="https://api.whatsapp.com/send?phone=6285201293777" class="text-black bg-[#fabd4b] text-[25px] md:text-[30px] px-[22px] py-[12px] rounded-[30px]">Hubungi Admin</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto lg:max-w-[1000px] lg:mt-[50px] flex justify-center items-center">
+      <div
+        class="w-[95%] md:w-full text-center justify-center text-[15px] md:text-[26px] gap-[20px] md:gap-[40px] items-center py-[10px] px-[50px] md:py-[30px] md:px-[160px] font-semibold rounded-[30px] flex flex-col"
+        style="background: rgb(255, 255, 255); background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(104, 175, 255, 1) 100%)"
+      >
+        <p class="font-bold text-[30px]">Catatan Kecil</p>
+        <p>Pastikan anda membaca semua informasi di website ini dengan baik dan memikirkannya dengan matang.</p>
+        <p>Untuk anda yang masih ragu atau belum siap, jangan terlalu memaksakan join.</p>
+        <p>Insha Allah jika sudah waktunya, Jika saatnya telah tiba, kita akan memiliki kesempatan untuk bertemu lagi.</p>
+        <p>----</p>
+        <p>Kita sangat mengharapkan hubungan kerja sama (jual- beli) yang baik</p>
       </div>
     </div>
 
@@ -335,4 +327,33 @@
   <script src="./main.js" type="module"></script>
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+
+      spaceBetween: 30,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </html>

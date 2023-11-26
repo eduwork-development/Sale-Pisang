@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         about: resolve(__dirname, "about.html"),
+        join_reseller: resolve(__dirname, "join-reseller.html"),
       },
     },
   },
